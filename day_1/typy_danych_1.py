@@ -82,4 +82,5 @@ print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 6 >= 8 = False
 print(f"Porównnie {a >=b = }")  # Porównnie a >=b = False
 print(f"{a=}")  # a=6
 print(f"Porównnie {a} == {b} = {a == b}")  # Porównnie 6 == 8 = False, przyrównanie
+print(f"Porównnie {a}jest równe{b} = {a == b}")  # Porównnie 6jest równe8 = False
 print(f"Porównnie {a} != {b} = {a != b}")  # Porównnie 6 != 8 = True, czy różne
