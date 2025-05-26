@@ -31,3 +31,26 @@ print(0.2 + 0.7)  # 0.8999999999999999
 # występuej bład zaokrąglenia
 # the sum 12.345 + 1.0001 = 13.3451 might be rounded to 13.345.
 # decimal - pozwala lepiej zarządzać błędem zaokrąglenia
+
+
+# typ logiczny
+# prawda, fałsz
+# True, False
+# 1 0
+
+czy_znasz_pythona = True
+print(czy_znasz_pythona)  # True
+print(type(czy_znasz_pythona))  # <class 'bool'>, boolean, typ logiczny
+
+print(int(True))  # 1
+print(int(False))  # 0
+
+print(bool(1))  # True
+print(bool(0))  # False
+
+print(bool(100))  # True
+print(bool(-100))  # True
+print(bool("Radek"))  # True
+
+print(bool(""))  # False
+print(bool(None))  # False
