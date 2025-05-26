@@ -54,3 +54,32 @@ print(bool("Radek"))  # True
 
 print(bool(""))  # False
 print(bool(None))  # False
+
+# and - i
+print(True and False)  # False
+# True and True    True
+# True and False    False
+# False and True    False
+# False and False    False
+
+# or - lub
+print(True or False)  # True
+# True or True    True
+# True or False    True
+# False or True    True
+# False or False    False
+
+# not - negaccja
+print(not True)  # False
+print(not False)  # True
+
+a = 6
+b = 8
+
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 6 > 8 = False
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 6 < 8 = True
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 6 >= 8 = False
+print(f"Porównnie {a >=b = }")  # Porównnie a >=b = False
+print(f"{a=}")  # a=6
+print(f"Porównnie {a} == {b} = {a == b}")  # Porównnie 6 == 8 = False, przyrównanie
+print(f"Porównnie {a} != {b} = {a != b}")  # Porównnie 6 != 8 = True, czy różne
