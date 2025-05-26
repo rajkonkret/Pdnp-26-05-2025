@@ -56,3 +56,23 @@ print(sys.int_info)
 # sys.int_info(bits_per_digit=30,
 # sizeof_digit=4, default_max_str_digits=4300,
 # str_digits_check_threshold=640)
+
+# zmienne - pudełko na dane, posiada nazwę
+# snake_case - konwencja nazewnicza, pliki, zmienne, funkcje
+# nazwa zmiennej powinna podpowiadać co zawiera zmienna
+
+# typowanie dynamiczne - w każdej chwile dowolny typ danych możemy wrzucić do zmiennej
+name = "Radek"
+print(name)  # nazwa zmiennej bez "", Radek
+print(type(name))  # <class 'str'>
+
+name = 90
+print(type(name))  # <class 'int'>
+
+# to są tylko podpowiedzi typów
+name: str = "Radek"
+print(name)
+print(type(name))  # <class 'str'>
+name = 90
+print(name)  # 90
+print(type(name))  # <class 'int'>
