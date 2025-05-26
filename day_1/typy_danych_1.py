@@ -1,0 +1,27 @@
+wiek = 47  # int
+rok = 2025  # int
+temp = 36.6
+print(type(temp))  # <class 'float'>
+temp_2 = 36, 6
+print(type(temp_2))  # <class 'tuple'>, krotka
+
+print(wiek + rok)
+print(wiek - rok)
+print(wiek * rok)
+print(wiek / rok)  # 0.023209876543209877 -> float
+print(rok // wiek)  # część caøkowita z dzielenia 2025 // 47 całych 43
+
+print(rok % wiek)  # 4, modulo, reszta z dzielenia
+print(10 % 3)  # 3 całe i 1 reszty
+
+print(wiek ** rok)  # potęgowanie
+# len() - długośc sekwencji
+print(len(str(wiek ** rok)))  # 3386 znaków
+# print(len(str(wiek ** rok ** 2)))
+# ValueError: Exceeds
+# the
+# limit(4300
+# digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+
+print(54 - 5 * 43 + 4 / 1 + 4 / 2)  # -155.0
+print(54 - 5 * 43 + (4 / 1 + 4) / 2)  # -157.0
