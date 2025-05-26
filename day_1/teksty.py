@@ -66,5 +66,5 @@ print("""\"Tekst
 # "Tekst
 #     wielolinijkowy"
 
-"""Komentrz
+"""Komentarz
 wielolinijkowy"""
