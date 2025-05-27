@@ -35,5 +35,76 @@ for i in range(6):
     # print(wyn)
     lista_wyn.append(wyn)
 
-print(lista_wyn) # [26, 48, 16, 3, 25, 47]
+print(lista_wyn)  # [26, 48, 16, 3, 25, 47]
 
+for i in range(10):
+    if i % 2 == 0:  # modulo
+        print(i, "parzysta")
+
+# list comprehensions
+lista3 = [j for j in range(10) if j % 2 == 0]
+print(lista3)  # [0, 2, 4, 6, 8]
+
+for c in lista3:
+    if c > 4:
+        print("Większe od 4")
+    else:
+        print("Mniejsze, równe 4")
+# Mniejsze, równe 4
+# Mniejsze, równe 4
+# Mniejsze, równe 4
+# Większe od 4
+# Większe od 4
+
+for i in range(0, 10, 2):  # start, stop, krok -> krok 2
+    print(i)
+# 0
+# 2
+# 4
+# 6
+# 8
+
+for i in range(-10, 0):
+    print(i)
+# -10
+# -9
+# -8
+# -7
+# -6
+# -5
+# -4
+# -3
+# -2
+# -1
+for i in range(10, 0, -1):  # ujemny krok, idziemy w dół
+    print(i)
+# 10
+# 9
+# 8
+# 7
+# 6
+# 5
+# 4
+# 3
+# 2
+# 1
+
+for c in lista3:
+    if c == 2:
+        c += 1  # c = c + 1
+        print(c)  # tylko dla c=2
+    print("Przy każdym przejściu pętli")
+
+print("Po zakońzeniu pętli")
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+# Przy każdym przejściu pętli
+# 3
+# Przy każdym przejściu pętli
+# Przy każdym przejściu pętli
+# Przy każdym przejściu pętli
+# Przy każdym przejściu pętli
+# Po zakońzeniu pętli
