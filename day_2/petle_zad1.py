@@ -108,3 +108,64 @@ print("Po zakońzeniu pętli")
 # Przy każdym przejściu pętli
 # Przy każdym przejściu pętli
 # Po zakońzeniu pętli
+
+imiona = ["Radek", "Tomek", "Zenek", "Ania"]
+print(imiona)
+print(type(imiona))  # <class 'list'>
+
+for p in imiona:
+    print(p)
+# Radek
+# Tomek
+# Zenek
+# Ania
+
+# 0 Radek
+for p in imiona:
+    print(imiona.index(p), p)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+
+# enemurate() - numeruje kolekcje i zwraca numer i element
+for p in enumerate(imiona):
+    print(p)
+# (0, 'Radek')
+# (1, 'Tomek')
+# (2, 'Zenek')
+# (3, 'Ania')
+a, b = (3, 'Ania')
+print(a, b)  # 3 Ania
+
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Ania
+
+for i, o in enumerate(imiona, start=1):
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Zenek
+# 4 Ania
+
+imiona = ["Radek", "Tomek", "Zenek", "Ania", "Ela"]
+wiek = [45, 65, 32, 43]
+
+# Radek 45
+# for p in imiona:
+#     print(p, wiek[imiona.index(p)]) # IndexError: list index out of range
+
+# zip() - łączenie kolekcji
+for i in zip(imiona, wiek):
+    print(i)  # ('Ania', 43)
+
+for i, w in zip(imiona, wiek):
+    print(i, w)
+# Radek 45
+# Tomek 65
+# Zenek 32
+# Ania 43
