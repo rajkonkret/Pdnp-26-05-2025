@@ -82,12 +82,31 @@ print(f"Rabat wynosi {rabat}")  # Rabat wynosi 25
 
 
 # napisac test z...
-odp = input("Podaj datę chrztu Polski")  # str
-if odp == "966":
-    print("Dobrze")
-else:
-    print("Musisz się jeszcze douczyć!")
+# odp = input("Podaj datę chrztu Polski")  # str
+# if odp == "966":
+#     print("Dobrze")
+# else:
+#     print("Musisz się jeszcze douczyć!")
+#
+# a = 490
+# b = int(input("podaj długość"))
+# print(a - b)
 
-a = 490
-b = int(input("podaj długość"))
-print(a - b)
+alert_system = "console"
+error_level = "error"
+lista_b = []
+
+if alert_system == "console":
+    print("Stało się coś strasznego")
+elif alert_system == "email":
+    print("System Error")
+    if error_level == "error":
+        lista_b.append("Krytyczny")
+    elif error_level == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("inny")
+else:
+    print("Inny system")
+
+print(lista_b)
