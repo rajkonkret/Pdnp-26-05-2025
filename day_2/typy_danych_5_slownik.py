@@ -44,11 +44,30 @@ print(dictionary)  # 'imie': 'Radek', 'wiek': 67, 'data': '31-12-2025'}
 # Podaj imięRadek
 # Radek
 
-# napisać aplikację kalkulator
+# # napisać aplikację kalkulator
+# #
+# a = int(input("Podaj pierwszą liczbę"))  # -> str
+# b = input("Podaj drugą liczbę")
 #
-a = int(input("Podaj pierwszą liczbę"))  # -> str
-b = input("Podaj drugą liczbę")
+# # print(a + b) # konkatencja
+# print(int(a) + float(b))  # 12.0
+# a = float(a)
 
-# print(a + b) # konkatencja
-print(int(a) + float(b))  # 12.0
-a = float(a)
+# napisac aplikację słownik pol_ang
+pol_ang = {"kot": "cat", "pies": "dog", "dach": "roof"}
+print(f"Znam takie słowa: {pol_ang.keys()}")
+odp = input("Podaj słówko do przetłumaczenia")
+# print(f"Tłumaczenie:  {pol_ang[odp.strip().lower()]}")
+# print("Tłumaczenie", pol_ang[odp.strip().lower()])
+
+print(pol_ang.get(odp.strip().lower(), "Nie mo"))
+#  Znam takie słowa: dict_keys(['kot', 'pies', 'dach'])
+# Podaj słówko do przetłumaczenia Kot
+# cat
+# Podaj słówko do przetłumaczenia typ
+# Nie mo
+
+name1 = "GROSS"
+name2 = "groß"
+print(name1.lower() == name2.lower())  # False
+print(name1.casefold() == name2.casefold())  # True
