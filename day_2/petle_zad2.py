@@ -46,3 +46,14 @@ print("Radek")
 print("Tomek")
 # imie=>Radek<====>nazwisko=>Kowalski<====>Radek
 # Tomek
+
+pol_ang = {"kot": "cat", "pies": "dog", "dach": "roof"}
+ang_pol = {}  # słownik
+for k, v in pol_ang.items():  # "kot": "cat", k="kot", v="cat"
+    # slownik[klucz] = wartosc
+    ang_pol[v] = k  # ang_pol[v="cat"] = k="kot"
+print(ang_pol)  # {'cat': 'kot', 'dog': 'pies', 'roof': 'dach'}
+
+# {value:key}
+print({value: key for key, value in pol_ang.items()})
+# {'cat': 'kot', 'dog': 'pies', 'roof': 'dach'}
