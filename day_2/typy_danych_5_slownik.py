@@ -25,3 +25,15 @@ print(dictionary.items())  # dict_items([('imie', 'Radek'), ('wiek', 67)])
 dict_list = {"imie": ["radek", "Tomek", "Zenek"]}
 print(dict_list)  # {'imie': ['radek', 'Tomek', 'Zenek']}
 print(dict_list['imie'][0])  # radek
+
+# wypisanie wartości
+print(dictionary['imie'])
+
+# print(dictionary["Imie"]) # KeyError: 'Imie'
+
+print(dictionary.get("imie"))  # Radek
+print(dictionary.get("Imie"))  # None
+print(dictionary.get("Imie", "default"))  # default
+
+dictionary.update({"data": "31-12-2025"})
+print(dictionary)  # 'imie': 'Radek', 'wiek': 67, 'data': '31-12-2025'}
