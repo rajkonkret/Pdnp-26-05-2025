@@ -30,3 +30,26 @@ print(zbior.pop())  # 33, usunie elemnt z pozycji pierwszej
 
 zmienna = zbior.pop()
 print("Usunięty:", zmienna)  # Usunięty: 66
+
+# operacje na zbiorach
+zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}
+print(type(zbior_2))  # <class 'set'>
+print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
+
+# suma zbiorów
+print(zbior | zbior_2)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62}
+print(zbior.union(zbior_2))  # {777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62}
+
+# częśc wspólna
+print(zbior & zbior_2)  # {18, 11, 44}
+print(zbior.intersection(zbior_2))  # {18, 11, 44}
+
+# róznica
+print(zbior - zbior_2)  # {24, 777, 22}
+print(zbior.difference(zbior_2))  # {24, 777, 22}
+print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
+
+krotka = tuple(zbior)
+print(777 in zbior)  # True
+print(667 in lista)  # False
+print(667 in krotka)  # False
