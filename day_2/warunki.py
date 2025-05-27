@@ -87,3 +87,7 @@ if odp == "966":
     print("Dobrze")
 else:
     print("Musisz się jeszcze douczyć!")
+
+a = 490
+b = int(input("podaj długość"))
+print(a - b)
