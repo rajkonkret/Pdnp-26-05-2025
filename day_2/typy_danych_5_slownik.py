@@ -37,3 +37,18 @@ print(dictionary.get("Imie", "default"))  # default
 
 dictionary.update({"data": "31-12-2025"})
 print(dictionary)  # 'imie': 'Radek', 'wiek': 67, 'data': '31-12-2025'}
+
+# input() - pozwala wprowadzić dane do komputera np.:  z kalwiatury
+# tekst = input("Podaj imię")
+# print(tekst)
+# Podaj imięRadek
+# Radek
+
+# napisać aplikację kalkulator
+#
+a = int(input("Podaj pierwszą liczbę"))  # -> str
+b = input("Podaj drugą liczbę")
+
+# print(a + b) # konkatencja
+print(int(a) + float(b))  # 12.0
+a = float(a)
