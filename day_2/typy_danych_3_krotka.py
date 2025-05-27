@@ -28,3 +28,4 @@ del tupla_liczby  # usunięcie tuplii z pamięci
 
 print(tupla_imiona.index("Radek"))  # index 0
 print(tupla_imiona.count("Radek"))  # wystepuje 1 raz
+
