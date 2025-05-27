@@ -92,7 +92,7 @@ print(f"Rabat wynosi {rabat}")  # Rabat wynosi 25
 # b = int(input("podaj długość"))
 # print(a - b)
 
-alert_system = "console"
+alert_system = "email"
 error_level = "error"
 lista_b = []
 
@@ -109,4 +109,4 @@ elif alert_system == "email":
 else:
     print("Inny system")
 
-print(lista_b)
+print(lista_b)  # ['Krytyczny']
