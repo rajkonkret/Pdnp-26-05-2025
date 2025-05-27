@@ -52,3 +52,39 @@ print(lista[:])  # ['Radek', 'Tomek', 'Zenek', 'Marek', 'Kuba', 'Emilia', 'Anna'
 print(lista[2:2])  # []
 print(lista[2:3])  # ['Zenek'] indeks 2
 print(lista[::2])  # ['Radek', 'Zenek', 'Kuba', 'Anna']
+
+# # ['Radek', 'Tomek', 'Zenek', 'Marek', 'Kuba', 'Emilia', 'Anna']
+# #     0         1       2        3        4        5        6
+# #     -7       -6       -5       -4       -3       -2       -1
+
+print(lista[-2:0])  # [] -> [4:0]
+print(lista[0:-2])  # ['Radek', 'Tomek', 'Zenek', 'Marek', 'Kuba'] [0:5]
+
+lista_15 = list(range(15))  # od 0 do 14
+print(lista_15)  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+print(lista_15[::2])  # [0, 2, 4, 6, 8, 10, 12, 14], krok=2
+
+print(lista[::-1])  # wypisze w odwrotnej kolejności
+# ['Anna', 'Emilia', 'Kuba', 'Marek', 'Zenek', 'Tomek', 'Radek']
+
+# nadpisanie elementu
+lista[3] = "Radek"
+print(lista)  # ['Radek', 'Tomek', 'Zenek', 'Radek', 'Kuba', 'Emilia', 'Anna']
+
+# dopisanie do listy na wskazanym indeksie
+lista.insert(1, "Roman")
+print(lista)  # ['Radek', 'Roman', 'Tomek', 'Zenek', 'Radek', 'Kuba', 'Emilia', 'Anna']
+
+# sprawdzenie indeksu dla elementu, pierwszy napotkany
+print(lista.index("Radek"))  # 0
+
+print(lista.count("Radek"))  # występuje 2 razy
+# usunięcie elementu, usunie pierwszy napotkany
+lista.remove("Radek")
+print(lista)  # ['Roman', 'Tomek', 'Zenek', 'Radek', 'Kuba', 'Emilia', 'Anna']
+
+# usunięcie po indeksie, zwraca usunięty element
+print(lista.pop(5))  # Emilia
+print(lista)  # ['Roman', 'Tomek', 'Zenek', 'Radek', 'Kuba', 'Anna']
+print(lista.pop(-2))  # Kuba
+print(lista.pop())  # Anna, usunie ostatni
