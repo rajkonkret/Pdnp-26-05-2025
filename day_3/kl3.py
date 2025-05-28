@@ -49,3 +49,9 @@ kur1.latam()  # Tu Kura Lecę z szybkością 0
 kur2 = Kura("Kura domowa")
 kur2.latam()  # Tu Kura domowa Ja nie latam.
 kur2.dziobanie()  # Tu Kura domowa Idę sobie podziobać
+
+or2 = Orzel("Bielik", 50)
+or2.polowanie()
+or2.latam()
+# tu Bielik rozpoczynam polowanie
+# Tu Bielik Lecę z szybkością 50
