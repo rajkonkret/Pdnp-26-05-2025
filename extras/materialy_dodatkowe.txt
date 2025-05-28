@@ -132,3 +132,7 @@ pyinstaller --onefile --noconsole .\okno1.py
 
 # bardziej zaawansowane podejscie do exe
 https://nuitka.net/
+
+pluginy:
+copilot
+tabnine
