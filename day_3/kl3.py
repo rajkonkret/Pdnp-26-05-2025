@@ -26,6 +26,7 @@ class Kura(Ptak):  # kalsa Kura dziedziczy po kalsie Ptak
         super().__init__(gatunek, 0)  # super() - klasa wyższa
 
     def latam(self):
+        # or2.gatunek
         print('Tu', self.gatunek, "Ja nie latam.")
 
     def dziobanie(self):
