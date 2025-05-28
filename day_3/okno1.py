@@ -13,3 +13,9 @@ class MyGui:
 
 
 my_gui = MyGui()
+
+print("To jest koniec programu")
+# To jest koniec programu
+# napisz funkcje wypisujaca tekst
+def wypisz_tekst(tekst):
+    print(tekst)
