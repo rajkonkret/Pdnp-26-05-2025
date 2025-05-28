@@ -122,3 +122,13 @@ https://www.hackerrank.com/challenges/py-hello-world/problem?isFullScreen=true
 https://pl.altapps.net/soft/hackerrank-com
 
 https://github.com/public-apis/public-apis
+
+pip freeze > requirements.txt
+pip install -r .\requirements.txt
+
+# exe
+pip install pyinstaller
+pyinstaller --onefile --noconsole .\okno1.py
+
+# bardziej zaawansowane podejscie do exe
+https://nuitka.net/
