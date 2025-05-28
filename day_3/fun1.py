@@ -37,4 +37,25 @@ odejmij(a=1, c=4, b=8)  # -11
 # mieszane
 odejmij(1, b=9, c=7)  # -15
 
-print(dodaj() + dodaj2(5, 9))  # TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+
+# print(dodaj() + dodaj2(5, 9))  # TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+
+
+# funkcje zwracające wynik, kończy się returnem
+def dodaj3(e, f):
+    return e + f  # 95
+
+
+def odejmij2(a=0, b=0, c=0):
+    return a - b - c
+
+
+print(dodaj3(5, 90))  # 95
+print(odejmij2())
+print(odejmij2(1, 2))
+print(odejmij2(a=2, c=8))  # -6
+
+print(dodaj3(5, 9) + dodaj3(6, 23))  # 43
+
+odp = int(input("Podaj a"))
+print(dodaj3(odp, 8))
