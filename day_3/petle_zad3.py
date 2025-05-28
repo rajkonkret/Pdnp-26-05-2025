@@ -45,7 +45,7 @@ while 5 in my_list:
 
 print(my_list)  # [1, 2, 3, 4, 6]
 
-# usunąć duplikaty liczby 5, pozostawić jeden element liczby 5, nie zmienia kolejność
+# usunąć duplikaty liczby 5, pozostawić jeden element liczby 5, nie zmienia kolejności
 my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
 print(dict.fromkeys(my_list))
 # {1: None, 5: None, 2: None, 3: None, 4: None, 6: None}
